@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorDark"
+    tools:context=".CoachHome">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/logo_2"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorDarkDva"
+        android:layout_margin="5dp"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/defaultpp"
+            android:id="@+id/imgCoachImage"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txtCoachNameProf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coach: "
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"/>
+            <TextView
+                android:id="@+id/txtCoachRoleProf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role: "
+                android:textSize="16sp"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:paddingTop="25dp"
+            android:drawableTop="@drawable/add_team"
+            android:text="@string/add_player"
+            android:layout_margin="1dp"
+            android:onClick="txtAddPlayerCoach"
+            android:background="@color/colorDarkDva"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:paddingTop="25dp"
+            android:drawableTop="@drawable/my_players"
+            android:text="@string/my_players"
+            android:layout_margin="1dp"
+            android:onClick="txtMyPlayersButtCoach"
+            android:background="@color/colorDarkDva"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="5dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:paddingTop="25dp"
+            android:drawableTop="@drawable/account"
+            android:text="My Profile"
+            android:onClick="txtMyAccountCoach"
+            android:layout_margin="1dp"
+            android:background="@color/colorDarkDva"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="1"
+            android:paddingTop="25dp"
+            android:drawableTop="@drawable/match"
+            android:text="@string/matches"
+            android:layout_margin="1dp"
+            android:onClick="txtMatches"
+            android:background="@color/colorDarkDva"
+            android:textColor="@color/colorWhite"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

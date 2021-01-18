@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorDark"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/player_profile"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_edit"
+        android:text="Match line-up"
+        android:onClick="btnLineUp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="40dp"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_blue"
+        android:text="List of Matches"
+        android:onClick="btnListMatches"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"
+        />
+
+</LinearLayout>

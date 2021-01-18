@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.eyezo.hockeyapp">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+
+    -<application android:name=".HockeyBack"
+    android:theme="@style/AppTheme"
+    android:supportsRtl="true"
+    android:roundIcon="@mipmap/logo_2"
+    android:label="@string/app_name"
+    android:icon="@mipmap/logo_2"
+    android:allowBackup="true">
+
+
+    -<activity android:name=".MainActivity"
+    android:theme="@style/AppTheme">
+
+
+    -<intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.DEFAULT"/>
+
+</intent-filter>
+
+</activity>
+
+    <activity android:name=".AdminHome" android:theme="@style/AppTheme.NoActionBar" android:label="@string/title_activity_admin_home"/>
+
+    <activity android:name=".RegisterUser"/>
+
+    <activity android:name=".AddTeamOrOpp"/>
+
+    <activity android:name=".MovePlayer"/>
+
+    <activity android:name=".AddPlayerActivity"/>
+
+    <activity android:name=".MedInformation"/>
+
+    <activity android:name=".MyPlayersList"/>
+
+    <activity android:name=".MyPlayers"/>
+
+    <activity android:name=".MedInfoUpdate"/>
+
+    <activity android:name=".Roles"/>
+
+    <activity android:name=".OpponentList"/>
+
+    <activity android:name=".MatchStatsActivity"/>
+
+    <activity android:name=".MatchList"/>
+
+    <activity android:name=".LineUp"/>
+
+    <activity android:name=".Matches"/>
+
+    <activity android:name=".ArticleActivity"/>
+
+    <activity android:name=".FullArticle"/>
+
+    <activity android:name=".CoachHome"/>
+
+
+    -<activity android:name=".Splash">
+
+
+    -<intent-filter>
+
+    <action android:name="android.intent.action.MAIN"/>
+
+    <category android:name="android.intent.category.LAUNCHER"/>
+
+</intent-filter>
+
+</activity>
+
+    <activity android:name=".SENDSMS"/>
+
+</application>
+
+</manifest>

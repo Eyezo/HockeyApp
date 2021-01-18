@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorDark"
+    tools:context=".AddPlayerActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_a_player_to_your_team"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/edPlayerName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="@string/name_of_player"
+        android:drawablePadding="5dp"
+        android:gravity="center"/>
+    <EditText
+        android:id="@+id/edPlayerSurname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/colorWhite"
+        android:textColor="@color/colorWhite"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:hint="Surname of player"
+        android:drawablePadding="5dp"
+        android:gravity="center"/>
+    <Spinner
+        android:id="@+id/spTeamNames"
+        android:layout_width="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="btnMedInfo"
+        android:textColor="@color/colorWhite"
+        android:text="@string/enter_medical_info"
+        android:background="@drawable/button_edit"/>
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:onClick="btnSavePlayer"
+        android:textColor="@color/colorWhite"
+        android:text="@string/save_player"
+        android:background="@drawable/button_blue"/>
+
+
+</LinearLayout>

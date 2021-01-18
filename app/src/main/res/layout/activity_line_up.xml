@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorDark"
+    tools:context=".LineUp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Match:"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Spinner
+            android:id="@+id/spLineUpOpp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:id="@+id/spLineUpTeam"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="1. Left Forward:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+
+                        <Spinner
+                            android:id="@+id/spLeftForward"
+                            android:layout_width="150dp"
+                            android:gravity="right"
+                            android:textAlignment="gravity"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbLeftForward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edLeftForward"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="2. Right Forward:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:id="@+id/spRightForward"
+                            android:layout_width="150dp"
+                            android:gravity="right"
+                            android:textAlignment="gravity"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbRightForward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edRightForward"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="3. Center Forward:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/spinnerstyler"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="20dp">
+                            <Spinner
+                                android:id="@+id/spCenterForward"
+                                android:layout_width="150dp"
+                                android:gravity="right"
+                                android:textAlignment="gravity"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbCenterForward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edCenterForward"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="4. Left Link:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:id="@+id/spLeftLink"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbLeftLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edLeftLink"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="5. Right Link:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spRightLink"
+                            android:layout_height="wrap_content"/>
+
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbRightLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edRightLink"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="6. Center Link:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spCenterLink"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbCenterLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edCenterLink"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="7. Left Back"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spLeftBack"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbLeftBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edLeftBack"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="8. Right Back:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:id="@+id/spRightBack"
+                            android:layout_width="150dp"
+                            android:gravity="right"
+                            android:textAlignment="gravity"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbRightBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edRightBack"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="9. Center Back:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:id="@+id/spCenterBack"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbCenterBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edCenterBack"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="10. Sweeper:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spSweeper"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbSweeper"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edSweeper"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="11. Goalie:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spGoalie"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbGoalie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edGoalie"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="12. Bench:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spBench12"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbBench12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edBench12"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="13. Bench:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spBench13"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbBench13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edBench13"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="14. Bench:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spBench14"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbBench14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edBench14"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="15. Bench:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spBench15"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbBench15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edBench15"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                android:layout_margin="7dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="16. Bench:"
+                            android:textSize="17sp"
+                            android:textColor="@color/colorWhite"/>
+                        <Spinner
+                            android:layout_width="150dp"
+                            android:id="@+id/spBench16"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <RatingBar
+                        android:id="@+id/rtbBench16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Goals: "
+                            android:textColor="@color/colorWhite"
+                            android:textSize="17sp"
+                            android:layout_gravity="center" />
+                        <EditText
+                            android:id="@+id/edBench16"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textColor="@color/colorWhite"
+                            android:background="@drawable/edit_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

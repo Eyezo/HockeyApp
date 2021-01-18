@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/menu_1"
+    android:title="Goals / Turnovers"
+    android:icon="@drawable/match_one"
+    android:orderInCategory="100"/>
+    <item android:id="@+id/menu_2"
+        android:title="Circle penetrations"
+        android:icon="@drawable/match_two"
+        android:orderInCategory="101"/>
+    <item android:id="@+id/menu_3"
+        android:title="Penalty corners"
+        android:icon="@drawable/match_three"
+        android:orderInCategory="102"/>
+    <item android:id="@+id/menu_4"
+        android:title="Shots"
+        android:icon="@drawable/match_four"
+        android:orderInCategory="103"/>
+
+</menu>

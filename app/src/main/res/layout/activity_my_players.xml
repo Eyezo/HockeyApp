@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorDark"
+    tools:context=".MyPlayers">
+    <TextView
+        android:id="@+id/txtNamePlayerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Of Player"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
+    />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnCallParentOne"
+            android:text="@string/call_parent_1"
+            android:textAlignment="center"
+            android:layout_margin="5dp"
+            android:paddingTop="17dp"
+            android:drawableTop="@drawable/call"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/circle_text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnCallParentTwo"
+            android:text="@string/call_parent_2"
+            android:textAlignment="center"
+            android:drawableTop="@drawable/call"
+            android:paddingTop="17dp"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/circle_text_blue"/>
+
+        <TextView
+            android:id="@+id/tvSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/circle_text"
+            android:clickable="true"
+            android:drawableTop="@mipmap/ic_sms"
+            android:paddingTop="17dp"
+            android:text="@string/sms"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Med Aid Name: "
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"/>
+        <TextView
+            android:id="@+id/txtMedAidNameView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Med Aid Plan: "
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/txtMedAidPlanView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Med Aid Number: "
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/txtMedAidNumbView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergies: "
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp"
+            />
+        <TextView
+            android:id="@+id/txtAllergiesView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

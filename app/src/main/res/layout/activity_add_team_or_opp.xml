@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorDark"
+    tools:context=".AddTeamOrOpp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/add_team_or_opponent"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:padding="2dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/spTeam"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_age_group"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Spinner
+        android:id="@+id/spAgeGroup"
+        android:layout_width="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choach_for_team"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <Spinner
+        android:id="@+id/spCoach"
+        android:layout_width="150dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/team_name"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:id="@+id/edTeamName"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:textColor="@color/colorWhite"
+        android:drawableLeft="@drawable/my_players"
+        android:drawablePadding="15dp"
+        android:background="@drawable/edit_text"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:text="@string/submit_team"
+        android:onClick="submitTeam"
+        android:layout_gravity="center"
+        android:background="@drawable/button_edit"
+        android:layout_marginTop="18dp"
+        android:textColor="@color/colorWhite"/>
+
+
+
+</LinearLayout>
